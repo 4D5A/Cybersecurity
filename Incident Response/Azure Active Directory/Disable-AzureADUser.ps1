@@ -1,9 +1,5 @@
 $Logfilepath = "C:\Powershell Log Files\Disable-AzureADUser-$(Get-Date -f ddMMMyyyy).log"
 Start-Transcript -Path $Logfilepath
-Write-Host "Installing required Powershell Modules..."
-./New-Modules.ps1
-Write-Host "Importing required Powershell Modules..."
-./Import-Modules.ps1
 $AzureADManagementUPN = Read-Host "Enter the Azure Active Directory Management UserPrincipalName"
 Connect-AzureAD -AccountID $AzureADManagementUPN
 Clear-Host

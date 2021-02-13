@@ -1,3 +1,4 @@
 $ErrorActionPreference = "Stop"
 #Requires -Modules AzureAD
-Import-Module -Name AzureAD
+Write-Host "Importing required Powershell Modules..."
+Import-Module -UseWindowsPowershell -Name AzureAD
