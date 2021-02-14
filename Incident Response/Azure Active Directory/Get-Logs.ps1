@@ -1,0 +1,1 @@
+Get-Azureaduser -object $UPN | Select-Object DisplayName,AccountEnabled,UserPrincipalName,DirSyncEnabled,LastDirSyncTime,IsCompromised,PasswordPolicies,RefreshTokensValidFromDateTime
