@@ -13,5 +13,6 @@ $UPN = Read-Host "Enter the User Principal Name of the account which is suspecte
     If ($DisableAzureADUserDisableConfirm -notlike "Yes") {
       Write-Host "You decided not to disable the AzureAD user $UPN and revoke all AzureAD tokens for AzureAD user $UPN. You also indicated you believe the AzureAD account $UPN is compromised. If you meant to disable the AzureAD account $UPN and revoke all AzureAD tokens for the AzureAD account $UPN, please run the script again and answer the questions correctly."
     }
+Get-Logs.ps1
 Disconnect-AzureAD -Confirm:$false
 Stop-Transcript

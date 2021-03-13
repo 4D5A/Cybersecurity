@@ -1,1 +1,1 @@
-Get-Azureaduser -object $UPN | Select-Object DisplayName,AccountEnabled,UserPrincipalName,DirSyncEnabled,LastDirSyncTime,IsCompromised,PasswordPolicies,RefreshTokensValidFromDateTime
+Get-Azureaduser -object $UPN | Select-Object DisplayName,AccountEnabled,UserPrincipalName,DirSyncEnabled,LastDirSyncTime,IsCompromised,PasswordPolicies,RefreshTokensValidFromDateTime | Out-File -FilePath "C:\temp\report.txt"
